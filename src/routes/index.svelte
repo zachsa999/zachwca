@@ -1,11 +1,15 @@
 <script>
 	import HomeHandler from '$lib/HomeHandler/HomeHandler.svelte';
-	// export let document;
+	import * as prismicH from '@prismicio/helpers';
+
+	export let document;
 
 	let mouse = { x: 0, y: 0 };
 </script>
 
-<!-- <pre>{JSON.stringify(document, null, 2)}</pre> -->
+<p>{document.data.title}</p>
+<!-- {console.log(document)} -->
+<!-- {@html prismicH.asHTML(document.data.content)} -->
 
 <div class="background1">
 	<img src="whitegrit.png" class="background2" alt="texture" />
@@ -20,7 +24,7 @@
 		position: relative;
 		background: black;
 		/* background-color: #a55c1b; */
-		background-image: linear-gradient(315deg, #593a01 0%, #000000 90%);
+		background-image: linear-gradient(315deg, #303030 0%, #000000 90%);
 	}
 	.background2 {
 		background: black;

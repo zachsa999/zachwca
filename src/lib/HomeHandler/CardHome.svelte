@@ -1,11 +1,11 @@
 <script>
 	export let document;
+	// import { document } from '../../routes/index';
 </script>
 
-<pre>{JSON.stringify(document)}</pre>
 <img src="zacharyWiebeLogo1.svg" alt="zWeb Logo" style="" class="" />
 <div class="info-wrapper">
-	<p class="card-title mb-10">neener</p>
+	<p class="card-title mb-10">{document.data.title}</p>
 	<!-- <div class="p-5">
 		<div class="flex pl-20">
 			<p class="font-semibold">Phone:</p>

@@ -1,11 +1,12 @@
 src/
 ├── routes/
-│   ├── prismcio.js
+│   ├── prismcClient.js
 │   └── HomeHandler/
 │       ├── CardHome.js
 │       ├── CardHome.js
 │       ├── CardHome.js
 │       └── index.js
 └── lib/
+    ├── __layout.svelte
     ├── index.svelte
     └── index.js

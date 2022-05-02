@@ -1,11 +1,8 @@
-import createClient from '$lib/prismicio'
+import createClient from '$lib/prismicClient'
 
 export async function get({ fetch }) {
     const client = createClient({ fetch })
-    const document = await client.getByUID('home_card', 'carduid')
-    // const document = await client.getByUID('page', 'homepage')
-
-
+    const document = await client.getByUID('page', 'homepage')
 
     if (document)
         return {
@@ -18,3 +15,6 @@ export async function get({ fetch }) {
         status: 404,
     }
 }
+
+
+
